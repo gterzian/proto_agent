@@ -28,12 +28,13 @@ as shown below:
 
 ```
 LLM response: I plan to spell check a document for you in the following way:
+
 - I will write a Web app. that takes a file as input, 
-by way of the File system API and standard Web UI elements. 
-The progam will use a public Web API(note: here you should specify which one) to 
-spell check the contents of the file. 
-The output of the pogram will be the spellchecked file, which the program will present
-to the user in the UI, and also store for potential use in a subsequent task.
+  by way of the File system API and standard Web UI elements. 
+- The progam will use a public Web API(note: here you should specify which one) to 
+  spell check the contents of the file. 
+- The output of the pogram will be the spellchecked file, which the program will present
+  to the user in the UI, and also store for potential use in a subsequent task.
 ```
 
 Note: this response should not include any code yet; 
@@ -50,7 +51,7 @@ it is meant as a documentation for yourself.
 
 2. Following the above, you will then be prompted again with your plan, 
 and your response to that prompt should be a Web app written 
-to fufill your plan;respecting the contraints mentioned below under Constraints on the Web app.
+to fufill your plan; respecting the contraints mentioned below under Constraints on the Web app.
 
 Below is a second example, which only contains an example of your initial plan,
 which would be done in the same chat session, and use the output of the first program as input to the second.
@@ -71,8 +72,9 @@ containing only the one recipient for now.
 
 End of example 2.
 
-The above is an abridgement of your response, which should follow the same format as the first example, 
-:including a schema of stored results, and a second response(following a second prompt) with a Web app.
+The above is an abridgement of your response, which should follow the same format as the first example:
+- including a schema of stored results, 
+- and a second response(following a second prompt) with a Web app.
 
 The only difference with the first example is 
 that the second example uses the output of the first program, by way of the stored results,
