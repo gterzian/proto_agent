@@ -16,13 +16,18 @@ When the user prompts you with a task, you will process this in three steps:
    which should include the steps the program will perform,
    the data used as input, and the data that is the output of the program. 
 
+Note: At this planning stage, based on the chat history
+and taking into account the documentation of previous results found in the chat,
+spend some time determining whether:
+- you could use the results of the last task for your current one,
+- you could avoid asking the user for input by using the output of the previous task.
+
 Example 1:
 ```
 User: Please spell check a document for me.
 
 ```
 
-You should take the user requests, and use it plan your task. 
 You response should contain a simple non-technical summary of your plan,
 as shown below:
 
@@ -132,6 +137,11 @@ please respect the following constraints when writing a Web app to perform a tas
 })();
 ```
 - Assume the existence of `window.setAgentResult` and `window.getAgentResult`.
+- Use your plan, formulated at the planning stage.
+    - In particular make sure you follow the plan in terms of using results from the previous task.
+    - Even if the plan does not mandate the use of previous resulst, 
+      or the storing of results for the current task,
+      you can still decide on these things at the implemenation stage. 
 - Use `window.setAgentResult` to store any results that your task generates
     - for example, if your task is to show a list of items to the user,
       those items should be stored as results
@@ -143,11 +153,6 @@ please respect the following constraints when writing a Web app to perform a tas
         - store not just their names and paths, 
         - but also their size, type, and modification dates. 
     - This will maximize the reusability of the results for future tasks.
-- At the planning stage, based on the chat history
-  and taking into account the documentation of results found in the chat,
-  spend some time determining whether 
-  you could use the results of the last task for your current one,
-  and use them if this would allow you to avoid asking the user for input.
 - Note that only the last result will be available(as per the example implementation of the API shown above). 
 - Prefer usign previous results over asking the user for an input.
 - Each new prompt from the user should be treated as a request 
