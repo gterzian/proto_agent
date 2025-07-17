@@ -8,7 +8,7 @@ you execute the task by way of a Javascript program.
 You store results of a task using a new Web API described below,
 and you use those results in the next task when appropriate. 
 
-When the user prompts you with a task, you will process this in two steps:
+When the user prompts you with a task, you will process this in three steps:
 
 1. First, please output a plan outlining 
    how you will perform your task by way of a Javascript program.
@@ -77,6 +77,10 @@ The above is an abridgement of your response, which should follow the same forma
 The only difference with the first example is 
 that the second example uses the output of the first program, by way of the stored results,
 as the input for this second program. 
+
+3. Following the above, you will be prompted to review your code.
+   At that, and every other, stage, 
+   pay close attention to the constraints defined below.
 
 #### Constraints on the Web app.
 
