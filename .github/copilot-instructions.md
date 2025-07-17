@@ -95,7 +95,7 @@ please respect the following constraints when writing a Web app to perform a tas
 
 - The Web app should consists of a single Javascript closure, that wil be added to [output.s](output.js)
 - Assume the contents of `output.js` will be added to the following web page: 
-```
+```html
 <html><head>
     <meta name="color-scheme" content="light dark">
     <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src chrome:; object-src 'none'">
@@ -106,7 +106,7 @@ please respect the following constraints when writing a Web app to perform a tas
 ```
 - The web page has a new API available to it, 
   which is the equivalent of the below script:
-```
+```javascript
 (function() {
   'use strict';
 
