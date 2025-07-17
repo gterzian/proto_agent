@@ -31,7 +31,8 @@ This schema stores all relevant file metadata including size, modification dates
 
 gterzian: Now please implement the Web app using your above plan and schema. The code should go into #file:output.js 
 
-GitHub Copilot: ````javascript
+GitHub Copilot: 
+```javascript
 (function() {
   'use strict';
 
@@ -373,7 +374,7 @@ GitHub Copilot: ````javascript
   });
 
 })();
-````
+```
 
 Similar code found with 3 license types
 
@@ -400,7 +401,7 @@ I need to rewrite the code to:
 3. **Check for previous results first** using `getAgentResult()`
 4. **Ensure Firefox compatibility** throughout
 
-````javascript
+```javascript
 (function() {
   'use strict';
 
@@ -683,7 +684,7 @@ I need to rewrite the code to:
   init();
 
 })();
-````
+```
 
 ## Key Improvements:
 
@@ -731,7 +732,8 @@ This schema stores comprehensive size statistics including totals, averages, and
 
 gterzian: Now please implement the Web app as per your plan above.
 
-GitHub Copilot: ````javascript
+GitHub Copilot: 
+```javascript
 (function() {
   'use strict';
 
@@ -879,7 +881,7 @@ GitHub Copilot: ````javascript
   init();
 
 })();
-````
+```
 
 Similar code found with 2 license types
 
