@@ -73,6 +73,7 @@ as the input for this second program.
     - The data from previous tasks you intend to use.
     - The data produced by the current task that you intend to store for later use. 
 - Your response should not include any code yet.
+- If your conclusion in this step is that it is impossible for you to formulate a plan, because the task is too vague, then give the user feedback about the vagueness of the task. Do this by starting your reponse with the exactly words: "I am sorry, but the task description is too vague". This means you will remain at the first planning step until the user has clarified the task at hand to a level that allows you to produce a plan. 
 
 #### 2. The implementation step
 
